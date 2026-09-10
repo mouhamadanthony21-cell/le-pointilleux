@@ -714,20 +714,26 @@ ul { list-style: none; }
    RESPONSIVE — Mobile
    ============================== */
 @media (max-width: 768px) {
+  /* backdrop-filter cree un containing block qui piege le position:fixed
+     du menu overlay -> on le desactive sur mobile */
+  .header { backdrop-filter: none; background: rgba(255,255,255,.97); }
+
   .header .nav { display: none !important; }
   .btn--header { display: none; }
   .burger { display: flex; }
 
-  /* Nav mobile overlay */
+  /* Nav mobile overlay : couvre tout l'ecran sous le header */
   .header .nav.nav--open {
     display: flex !important;
     flex-direction: column;
     position: fixed;
-    inset: 0;
+    top: 112px; left: 0; right: 0; bottom: 0;
     background: var(--white);
     z-index: 1001;
-    padding: 100px 32px 32px;
+    padding: 24px 32px 32px;
     gap: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
   }
   .header .nav.nav--open .nav__link {
     font-size: 1.2rem;
