@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Pointilleux — Imprimerie & Sérigraphie à Dakar</title>
+  <meta name="description" content="Le Pointilleux : votre partenaire en imprimerie, sérigraphie, sublimation et fournitures de bureau à Dakar, Sénégal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#accueil" class="logo">
+        <img src="lp.png" alt="Le Pointilleux" class="logo__img">
+        <span class="logo__text">
+          <span class="logo__le">le</span>
+          <span class="logo__nom"><span class="logo__p">P</span>o<span class="logo__i">i</span>nt<span class="logo__i">i</span>lleux</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#accueil" class="nav__link nav__link--active">Accueil</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#portfolio" class="nav__link">Portfolio</a>
+        <a href="#clients" class="nav__link">Clients</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <a href="#contact" class="btn btn--header">Demander un devis</a>
+
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero" id="accueil">
+    <div class="hero__overlay"></div>
+    <div class="container hero__content">
+      <p class="hero__tag">Imprimerie &middot; Sérigraphie &middot; Sublimation</p>
+      <h1 class="hero__title">L'excellence au service<br>de votre image</h1>
+      <p class="hero__subtitle">De la conception à la réalisation, Le Pointilleux donne vie à vos projets avec précision et créativité.</p>
+      <div class="hero__actions">
+        <a href="#services" class="btn btn--primary">Découvrir nos services</a>
+        <a href="#contact" class="btn btn--outline">Nous contacter</a>
+      </div>
+
+      <div class="hero__poles">
+        <div class="pole">
+          <div class="pole__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="12" y2="14"/></svg>
+          </div>
+          <span class="pole__label">Imprimerie</span>
+        </div>
+        <div class="pole">
+          <div class="pole__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/></svg>
+          </div>
+          <span class="pole__label">Sérigraphie</span>
+        </div>
+        <div class="pole">
+          <div class="pole__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <span class="pole__label">Sublimation</span>
+        </div>
+        <div class="pole">
+          <div class="pole__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 9h16"/><path d="M9 4v16"/></svg>
+          </div>
+          <span class="pole__label">Fournitures</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-tag">Ce que nous faisons</p>
+      <h2 class="section-title">Nos Services</h2>
+      <p class="section-desc">Une gamme complète de solutions d'impression et de personnalisation pour répondre à tous vos besoins.</p>
+
+      <div class="services__grid">
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--imprimerie">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="9" y1="6" x2="15" y2="6"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="14" x2="13" y2="14"/></svg>
+          </div>
+          <h3 class="service-card__title">Imprimerie</h3>
+          <p class="service-card__text">Affiches, publications, dépliants, brochures, flyers, cartes de visite et tout support imprimé haute qualité.</p>
+          <ul class="service-card__list">
+            <li>Affiches grand format</li>
+            <li>Brochures &amp; dépliants</li>
+            <li>Cartes de visite</li>
+            <li>Catalogues &amp; revues</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--numerique">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3 class="service-card__title">Supports Numériques</h3>
+          <p class="service-card__text">Roll-up, banderoles, kakémonos et supports de communication événementielle pour une visibilité maximale.</p>
+          <ul class="service-card__list">
+            <li>Roll-up &amp; pop-up</li>
+            <li>Banderoles &amp; bâches</li>
+            <li>Kakémonos</li>
+            <li>Panneaux publicitaires</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--serigraphie">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20.38 3.46L16 2 12 5 8 2 3.62 3.46a2 2 0 00-1.34 1.89v14.3a2 2 0 002.66 1.89L8 20l4-3 4 3l3.38 1.46a2 2 0 002.62-1.89V5.35a2 2 0 00-1.24-1.89z"/></svg>
+          </div>
+          <h3 class="service-card__title">Sérigraphie</h3>
+          <p class="service-card__text">Personnalisation de t-shirts, casquettes, sacs et textiles par sérigraphie professionnelle pour entreprises et événements.</p>
+          <ul class="service-card__list">
+            <li>T-shirts &amp; polos</li>
+            <li>Casquettes &amp; chapeaux</li>
+            <li>Sacs &amp; tote bags</li>
+            <li>Textiles corporate</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--sublimation">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 008 20c4 0 6-2 8-6s2-6 2-6-1 0-1 0z"/><circle cx="15" cy="9" r="1"/></svg>
+          </div>
+          <h3 class="service-card__title">Sublimation</h3>
+          <p class="service-card__text">Mugs, gourdes, objets personnalisés et goodies sublimés avec des couleurs éclatantes et durables.</p>
+          <ul class="service-card__list">
+            <li>Mugs &amp; gourdes</li>
+            <li>Souris &amp; claviers</li>
+            <li>Coussins &amp; plaids</li>
+            <li>Objets promotionnels</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--enseignes">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/><line x1="9" y1="9" x2="9" y2="9.01"/><line x1="9" y1="13" x2="9" y2="13.01"/><line x1="9" y1="17" x2="9" y2="17.01"/></svg>
+          </div>
+          <h3 class="service-card__title">Enseignes &amp; Décoration</h3>
+          <p class="service-card__text">Création et installation d'enseignes, habillage de véhicules et décoration d'intérieur pour entreprises.</p>
+          <ul class="service-card__list">
+            <li>Enseignes lumineuses</li>
+            <li>Habillage de véhicules</li>
+            <li>Adhésifs décoratifs</li>
+            <li>Signalétique</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <div class="service-card__icon service-card__icon--graphisme">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+          </div>
+          <h3 class="service-card__title">Conception Graphique</h3>
+          <p class="service-card__text">Création de logos, identité visuelle complète et supports de communication pour renforcer votre image de marque.</p>
+          <ul class="service-card__list">
+            <li>Logos &amp; identité</li>
+            <li>Charte graphique</li>
+            <li>Supports de communication</li>
+            <li>Maquettes &amp; prototypage</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO ========== -->
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <p class="section-tag">Nos réalisations</p>
+      <h2 class="section-title">Portfolio</h2>
+      <p class="section-desc">Découvrez une sélection de nos projets récents.</p>
+
+      <div class="portfolio__filters">
+        <button class="filter-btn filter-btn--active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="imprimerie">Imprimerie</button>
+        <button class="filter-btn" data-filter="serigraphie">Sérigraphie</button>
+        <button class="filter-btn" data-filter="sublimation">Sublimation</button>
+        <button class="filter-btn" data-filter="enseignes">Enseignes</button>
+        <button class="filter-btn" data-filter="graphisme">Graphisme</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolioGrid">
+
+        <div class="portfolio__item" data-category="imprimerie">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #0066B3, #0099E6);">
+            <span class="portfolio__placeholder">Affiche</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Imprimerie</span>
+            <h4>Affiche événementielle</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="serigraphie">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #F5A623, #E8941A);">
+            <span class="portfolio__placeholder">T-shirts</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Sérigraphie</span>
+            <h4>T-shirts corporate</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="sublimation">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #E8453C, #C0392B);">
+            <span class="portfolio__placeholder">Mugs</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Sublimation</span>
+            <h4>Mugs personnalisés</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="enseignes">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #27AE60, #1E8449);">
+            <span class="portfolio__placeholder">Enseigne</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Enseignes</span>
+            <h4>Enseigne lumineuse</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="graphisme">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #8E44AD, #6C3483);">
+            <span class="portfolio__placeholder">Logo</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Graphisme</span>
+            <h4>Identité visuelle</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="imprimerie">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #2C3E50, #1A252F);">
+            <span class="portfolio__placeholder">Brochure</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Imprimerie</span>
+            <h4>Brochure annuelle</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="serigraphie">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #D35400, #A04000);">
+            <span class="portfolio__placeholder">Casquettes</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Sérigraphie</span>
+            <h4>Casquettes promotionnelles</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="imprimerie">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #1ABC9C, #16A085);">
+            <span class="portfolio__placeholder">Roll-up</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Imprimerie</span>
+            <h4>Roll-up de conférence</h4>
+          </div>
+        </div>
+
+        <div class="portfolio__item" data-category="enseignes">
+          <div class="portfolio__img" style="background: linear-gradient(135deg, #F39C12, #D68910);">
+            <span class="portfolio__placeholder">Véhicule</span>
+          </div>
+          <div class="portfolio__info">
+            <span class="portfolio__cat">Enseignes</span>
+            <h4>Habillage de véhicule</h4>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CLIENTS ========== -->
+  <section class="clients" id="clients">
+    <div class="container">
+      <p class="section-tag">Nos partenaires</p>
+      <h2 class="section-title">Ils nous ont fait confiance</h2>
+      <p class="section-desc">Nous sommes fiers de collaborer avec des organisations reconnues au Sénégal et au-delà.</p>
+
+      <div class="clients__grid">
+        <div class="client-card" style="background-image: url('client-logo/ministere-sante.png');">
+          <div class="client-card__name">Ministère de la Santé</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/usaid.svg');">
+          <div class="client-card__name">USAID</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/unicef.png');">
+          <div class="client-card__name">UNICEF</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/ong-3d.png');">
+          <div class="client-card__name">ONG-3D</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/cacmu.png');">
+          <div class="client-card__name">CACMU</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/abt-associates.svg');">
+          <div class="client-card__name">Abt Associates</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/radi.png');">
+          <div class="client-card__name">RADI</div>
+        </div>
+        <div class="client-card" style="background-image: url('client-logo/christian-aid.svg');">
+          <div class="client-card__name">Christian Aid</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__grid">
+
+        <div class="contact__info">
+          <p class="section-tag">Contactez-nous</p>
+          <h2 class="section-title section-title--left">Parlons de votre projet</h2>
+          <p class="contact__desc">Vous avez un projet d'impression ou de personnalisation ? N'hésitez pas à nous contacter pour une demande de devis personnalisée. Le coût dépend du service choisi.</p>
+
+          <div class="contact__details">
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <strong>Adresse</strong>
+                <p>Castors, Dakar<br>Sénégal</p>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <strong>Téléphone</strong>
+                <p><a href="tel:+221773775790">77 377 57 90</a><br><a href="tel:+221779867966">77 986 79 66</a></p>
+              </div>
+            </div>
+
+            <div class="contact__item">
+              <div class="contact__item-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:bachirzi@yahoo.fr">bachirzi@yahoo.fr</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contactForm">
+          <div class="form__row">
+            <div class="form__group">
+              <label for="name">Nom complet</label>
+              <input type="text" id="name" name="name" required placeholder="Votre nom">
+            </div>
+            <div class="form__group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="votre@email.com">
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="phone">Téléphone</label>
+            <input type="tel" id="phone" name="phone" placeholder="77 XXX XX XX">
+          </div>
+          <div class="form__group">
+            <label for="service">Service souhaité</label>
+            <select id="service" name="service">
+              <option value="">Sélectionnez un service</option>
+              <option value="imprimerie">Imprimerie</option>
+              <option value="numerique">Supports numériques</option>
+              <option value="serigraphie">Sérigraphie</option>
+              <option value="sublimation">Sublimation</option>
+              <option value="enseignes">Enseignes &amp; Décoration</option>
+              <option value="graphisme">Conception graphique</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Décrivez votre projet..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+        </form>
+
+      </div>
+
+      <div class="contact__map">
+        <iframe
+          src="https://www.google.com/maps?q=14.723617,-17.448076&amp;z=17&amp;hl=fr&amp;output=embed"
+          width="100%" height="400" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy"
+          title="Localisation Le Pointilleux - Dakar"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#accueil" class="logo logo--footer">
+            <img src="lp.png" alt="Le Pointilleux" class="logo__img">
+            <span class="logo__text">
+              <span class="logo__le">le</span>
+              <span class="logo__nom"><span class="logo__p">P</span>o<span class="logo__i">i</span>nt<span class="logo__i">i</span>lleux</span>
+            </span>
+          </a>
+          <p class="footer__tagline">Votre partenaire de confiance en imprimerie, sérigraphie, sublimation et communication visuelle à Dakar.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#clients">Clients</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li>Imprimerie</li>
+            <li>Supports numériques</li>
+            <li>Sérigraphie</li>
+            <li>Sublimation</li>
+            <li>Enseigne</li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4>Contact</h4>
+          <ul>
+            <li>Castors, Dakar</li>
+            <li>Sénégal</li>
+            <li>77 377 57 90</li>
+            <li>77 986 79 66</li>
+            <li>bachirzi@yahoo.fr</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Le Pointilleux. Tous droits réservés.</p>
+        <p class="footer__legal">Imprimerie &middot; Sérigraphie &middot; Sublimation &middot; Communication visuelle</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
