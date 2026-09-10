@@ -91,28 +91,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
   animElements.forEach(el => animObserver.observe(el));
 
-  // ===== CONTACT FORM =====
+  // ===== CONTACT FORM (FormSubmit) =====
   const form = document.getElementById('contactForm');
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.textContent;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const data = new FormData(form);
-    const name = data.get('name');
 
-    // Simple validation feedback
-    const btn = form.querySelector('button[type="submit"]');
-    const originalText = btn.textContent;
-    btn.textContent = 'Message envoyé !';
-    btn.style.background = '#27AE60';
+    // Honeypot : formulaire rempli par un bot -> on ignore silencieusement
+    if (data.get('_honey')) return;
+
+    const payload = {
+      name: data.get('name'),
+      email: data.get('email'),
+      phone: data.get('phone') || 'Non renseigné',
+      service: data.get('service') || 'Non précisé',
+      message: data.get('message'),
+      _subject: 'Nouveau message depuis le site Le Pointilleux',
+      _template: 'table',
+      _captcha: 'false'
+    };
+
     btn.disabled = true;
+    btn.textContent = 'Envoi en cours...';
 
-    setTimeout(() => {
-      btn.textContent = originalText;
-      btn.style.background = '';
-      btn.disabled = false;
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/bachirzi@yahoo.fr', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+
+      btn.textContent = 'Message envoyé !';
+      btn.style.background = '#27AE60';
       form.reset();
-    }, 3000);
-  });
 
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    } catch (err) {
+      btn.textContent = 'Erreur, réessayez';
+      btn.style.background = '#E8453C';
+
+      setTimeout(() => {
+        btn.textContent = originalText;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, 3000);
+    }
+  });
 });
