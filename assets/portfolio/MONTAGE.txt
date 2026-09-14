@@ -1,0 +1,37 @@
+MONTAGE PORTFOLIO — Le Pointilleux
+Sources : "LE POINTILLEUX PRESS BOOK vf.pdf"
+
+imprimerie.jpg  (Affiches + Publications + Dépliants, p.2-8)
+  affiches : pg02_x3, pg02_x4, pg02_x5, pg03_x15, pg03_x23
+  publications : pg04_x33, pg04_x34, pg04_x35, pg05_x128, pg06_x139, pg08_x158, pg08_x159
+  dépliants : pg07_x149, pg07_x150, pg07_x151, pg07_x152, pg07_x153
+
+roll-up.jpg  (p.9-10)
+  pg09_x164, pg09_x165, pg09_x3593, pg10_x190, pg10_x191
+
+banderoles.jpg  (p.11-13 ; SEF/ANSD et Atelier CMU capturées par rendu de zone p.12)
+  Layout : bandes horizontales empilées (plus de coupures)
+  pg11_x210 (CACMU/USAID), banderole_SEF_ANSD, banderole_Atelier_CMU, pg13_x250 (Miss Maths)
+
+casquettes.jpg  (une seule casquette — produit en vitrine)
+  pg14_x277 (casquette blanche)
+
+tshirts.jpg  (uniquement des t-shirts, produits en vitrine)
+  pg14_x279 (Macky SALL), pg14_x284 (Miss Maths), pg15_x299
+
+sac.jpg  (un seul sac — sacoche verte SISDAK)
+  pg16_x3619
+
+Exclus des collages (photos pleine page / contexte, pas des produits purs) :
+  pg16_x308, pg16_x352, pg17_x383, pg17_x384 (disponibles dans site/assets/raw/)
+
+sublimation.jpg  (p.18-19)
+  pg18_x391..x395, pg19_x402..x405
+
+enseigne.jpg  (p.20-21)
+  pg20_x412..x414, pg21_x421..x423
+
+logo.webp  (conservé tel quel)
+
+Feuille de contrôle sérigraphie : site/assets/raw/CONTACT_SERIGRAPHIE.png
+Tous les visuels bruts : site/assets/raw/
